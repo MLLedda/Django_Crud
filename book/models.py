@@ -6,7 +6,7 @@ class Book(models.Model):
     picture = models.ImageField()
     author = models.CharField(max_length=30, default='anonymous')
     email = models.EmailField(blank=True)
-    describe = models.TextField(default = 'Famous Book')
+    description = models.TextField(default = 'Famous Book')
 
 
     def __str__(self):
